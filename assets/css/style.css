@@ -1,0 +1,59 @@
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+a:hover {
+    color: darkslategray;
+}
+
+/* HEADER STYLES */
+
+header {
+    height: 80px;
+    border-bottom: solid darkslategrey 2px;
+    position: relative;
+}
+
+
+.logo {
+    float: left;
+    background-color: darkslategrey;
+    height: 100%;
+    vertical-align: bottom;
+    padding: 20px 10px 0 10px;
+    margin-left: 20%;
+    font-size: 2em;
+    color: white;
+}
+
+
+
+nav {
+    float: left;
+    padding: 30px 10px 0 10px;
+    margin-left: 30%;
+    height: 100%;
+}
+
+nav a {
+    padding: 0 2px;
+    font-size: 1.5em;
+}
+
+.nav-break::before {
+    content: "| "
+}
+
+
+.main-content {
+    clear: both;
+}
+.icon {
+    width: 60px;
+}
