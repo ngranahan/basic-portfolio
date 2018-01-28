@@ -1,59 +1,180 @@
 
+/* MAIN STYLES */
+
 * {
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
-    color: lightslategray;
+    color: dimgray;
 }
 
 a:hover {
-    color: darkslategray;
+    color: cadetblue;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: 900;
+}
+
+p, a, h4 {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+}
+
+h2 {
+    padding-bottom: 60px;
+    color: cadetblue;
+    font-size: 1.8em;
+}
+
+h3 {
+    padding-bottom: 50px;
+    color: cadetblue;
+    font-size: 1.5em;
+}
+
+h4 {
+    color: lightgray;
+    font-size: .8em;
+}
+
+p {
+    color: dimgray;
+}
+
+.page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 /* HEADER STYLES */
 
 header {
     height: 80px;
-    border-bottom: solid darkslategrey 2px;
+    border-bottom: solid lightgray 2px;
     position: relative;
 }
 
 
 .logo {
     float: left;
-    background-color: darkslategrey;
+    background-color: #4aaaa5;
     height: 100%;
     vertical-align: bottom;
-    padding: 20px 10px 0 10px;
-    margin-left: 20%;
+    padding: 20px 20px 0 20px;
+    margin-left: 150px;
     font-size: 2em;
     color: white;
+    font-size: 1.8em;
 }
-
-
 
 nav {
     float: left;
     padding: 30px 10px 0 10px;
     margin-left: 30%;
     height: 100%;
+    position: relative;
 }
 
 nav a {
-    padding: 0 2px;
-    font-size: 1.5em;
+    padding: 0 10px;
+    font-size: 1.1em;
+    float: left;
 }
 
-.nav-break::before {
-    content: "| "
+.nav-div-1, .nav-div-2 {
+    width: 1px;
+    height: 17px;
+    background-color: lightgray;
+    position: absolute;
+    
 }
 
+.nav-div-1 {
+    left: 76px;
+}
+
+.nav-div-2 {
+    left: 161px;
+}
+
+
+.underline {
+    position: relative;
+}
+
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+
+
+/* MAIN-CONTENT STYLES */
 
 .main-content {
     clear: both;
+    flex: 1;
 }
+
+.main-content {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    padding: 40px 0 0 150px;
+}
+
+section {
+    width: 40%;
+    background-color: white;
+    padding: 3%;
+    float: left;
+}
+
+.bio-photo {
+    float: left;
+    padding-right: 15px;
+}
+
+aside {
+    width: 270px;
+    padding: 30px;
+    float: left;
+    background-color: white;
+    margin-left: 10%;
+}
+
+p {
+    line-height: 1.6;
+}
+
 .icon {
     width: 60px;
+}
+
+.center {
+    margin: 0 10px;
+}
+
+
+
+/* FOOTER STYLES */
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: dimgray;
+    color: lightgray;
+    text-align: center;
+    line-height: 350%;
+    border-top: solid #4aaaa5 9px;
 }
