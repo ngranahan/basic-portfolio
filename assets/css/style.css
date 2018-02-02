@@ -8,7 +8,7 @@
 a {
     text-decoration: none;
     color: dimgray;
-    transition: .8s;
+    transition: .8s ease-in-out;
 }
 
 a:hover {
@@ -145,11 +145,12 @@ aside {
 }
 
 a img {
-    transition: .8s;
+    transition: .8s ease-in-out;
 }
 
 a img:hover {
     opacity: .5;
+    width: 62px;
 }
 
 .icon {
@@ -222,7 +223,7 @@ a img:hover {
     padding: 10px 20px;
     font-size: 1.1em;
     color: white;
-    transition: .8s;
+    transition: .8s ease-in-out;
 }
 
 .btn:hover {
